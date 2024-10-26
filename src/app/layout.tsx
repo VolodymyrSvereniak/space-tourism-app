@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./globals.scss";
 import Header from "@/components/Header/Header";
+import BackgroundImage from "@/features/BackgroundImage";
 
 export const metadata: Metadata = {
   title: "Space Tourism",
@@ -14,8 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <BackgroundImage />
         <Header />
-        {children}
+        <main className="container">{children}</main>
       </body>
     </html>
   );
