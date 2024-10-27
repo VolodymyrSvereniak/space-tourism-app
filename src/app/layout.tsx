@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import Header from "@/components/Header/Header";
-import BackgroundImage from "@/features/BackgroundImage";
+import BackgroundImage from "@/components/BackgroundImage/BackgroundImage";
 
 export const metadata: Metadata = {
   title: "Space Tourism",

@@ -8,22 +8,29 @@ export default function HeadNavigation() {
 
   return (
     <>
-      <Link className={`link ${pathname === "/" ? "active" : ""}`} href={"/"}>
+      <Link
+        rel="preload"
+        className={`link ${pathname === "/" ? "active" : ""}`}
+        href={"/"}
+      >
         Home
       </Link>
       <Link
+        rel="preload"
         className={`link ${pathname === "/destination" ? "active" : ""}`}
         href={"/destination"}
       >
         Destination
       </Link>
       <Link
+        rel="preload"
         className={`link ${pathname === "/crew" ? "active" : ""}`}
         href={"/crew"}
       >
         Crew
       </Link>
       <Link
+        rel="preload"
         className={`link ${pathname === "/technology" ? "active" : ""}`}
         href={"/technology"}
       >
