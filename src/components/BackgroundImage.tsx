@@ -1,7 +1,6 @@
 "use client";
 
 import Image, { StaticImageData } from "next/image";
-import styles from "./BackgroundImage.module.scss";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -91,11 +90,12 @@ export default function BackgroundImage() {
         src={screenSize}
         key={pathname}
         priority={true}
+        objectFit="cover"
         alt="Background"
         fill
         quality={100}
         sizes="100vw"
-        className={styles.img}
+        className="-z-50 animate-fade"
       />
     </>
   );
