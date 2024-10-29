@@ -10,8 +10,23 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        barlowCondensed: ["var(--font-barlow-condensed)"],
+        barlow: ["var(--font-barlow)"],
+        bellefair: ["var(--font-bellefair)"],
+      },
+      lineHeight: {
+        extended: "180%",
+      },
+      spacing: {
+        540: "33.75rem",
+      },
       colors: {
         blured: "rgba(255, 255, 255, 0.05)",
+        "home-desc": "rgb(208, 214, 249)",
+      },
+      borderWidth: {
+        large: '88px'
       },
       keyframes: {
         fade: {
@@ -25,7 +40,7 @@ module.exports = {
       },
 
       animation: {
-        fade: "fade 0.2s ease-in-out",
+        fade: "fade 0.1s ease-in-out",
       },
     },
   },

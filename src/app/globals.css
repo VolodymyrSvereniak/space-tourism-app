@@ -11,12 +11,6 @@
 html,
 body {
   overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-}
-
-.container {
-  margin: 0 auto;
 }
 
 .custom-before-line::before {
@@ -42,4 +36,20 @@ body {
 
 .hover-header-link:hover::after {
   transform: scaleX(1);
+}
+
+.hover-explore-button::after {
+  position: absolute;
+  content: "";
+  border: 88px solid rgba(255, 255, 255, 0.1);
+  width: 200px;
+  height: 200px;
+  padding: 128.5px;
+  border-radius: 999px;
+  transform: scale(0);
+  transition: transform 0.3s ease-out;
+}
+
+.hover-explore-button:hover::after {
+  transform: scale(1);
 }
