@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        blured: "rgba(255, 255, 255, 0.05)",
+      },
       keyframes: {
         fade: {
           "0%": {
