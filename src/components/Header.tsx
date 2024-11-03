@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "@/assets/shared/logo.svg";
+import Logo from "@public/assets/shared/logo.svg";
 import HeaderNavigation from "./HeaderNavigation";
 
 export default async function Page() {

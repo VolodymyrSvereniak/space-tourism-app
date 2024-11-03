@@ -26,7 +26,7 @@ module.exports = {
         "home-desc": "rgb(208, 214, 249)",
       },
       borderWidth: {
-        large: '88px'
+        large: "88px",
       },
       keyframes: {
         fade: {
@@ -35,6 +35,14 @@ module.exports = {
           },
           "100%": {
             opacity: "1",
+          },
+        },
+        animate: {
+          "0%": {
+            transform: "translateY(0)",
+          },
+          "100%": {
+            transform: "translateY(100%)",
           },
         },
       },

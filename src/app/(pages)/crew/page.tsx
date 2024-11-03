@@ -1,6 +1,6 @@
-import styles from "./Crew.module.scss";
+import getData from "@/lib/getData";
 
-export default function Crew() {
-    return <section>Crew</section>;
-  }
-  
+export default async function Crew() {
+  const data = await getData("crewKey");
+  return <section className="text-yellow-200">{data.crew.map((d) => d.name)}</section>;
+}

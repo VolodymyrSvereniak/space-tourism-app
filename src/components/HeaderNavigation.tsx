@@ -2,25 +2,27 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { currentDestination } from "@/utils/setBorderNavigation";
 
 export default function HeadNavigation() {
   const pathname = usePathname();
+  const destinationPath = currentDestination(pathname);
 
   return (
     <div className="flex gap-12 font-barlowCondensed">
       <Link
         rel="preload"
-        className={` flex items-center justify-center h-full relative tracking-widest ${
+        className={`flex items-center justify-center h-full relative tracking-widest ${
           pathname === "/" ? "border-b-4" : "hover-header-link"
         }`}
         href={"/"}
       >
-        <span className="mr-3 font-bold">00</span> HOME
+        <b className="mr-3 font-bold">00</b> HOME
       </Link>
       <Link
         rel="preload"
         className={`flex items-center justify-center h-full relative tracking-widest ${
-          pathname === "/destination" ? "border-b-4" : "hover-header-link"
+          pathname === destinationPath ? "border-b-4" : "hover-header-link"
         }`}
         href={"/destination"}
       >

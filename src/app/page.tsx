@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="flex justify-between items-center p-32 h-fit">
+    <section className="flex justify-between items-center p-32 h-fit ">
       <article className="flex flex-col justify-between items-start h-80 w-540">
         <h3 className="text-home-desc text-3xl font-barlowCondensed">
           SO, YOU WANT TO TRAVEL TO

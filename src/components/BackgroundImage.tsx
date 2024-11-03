@@ -4,21 +4,21 @@ import Image, { StaticImageData } from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import blur from "@/assets/blur.png";
-import home from "@/assets/home/background-home-desktop.jpg";
-import crew from "@/assets/crew/background-crew-desktop.jpg";
-import destination from "@/assets/destination/background-destination-desktop.jpg";
-import technology from "@/assets/technology/background-technology-desktop.jpg";
+import blur from "@public/assets/blur.png";
+import home from "@public/assets/home/background-home-desktop.jpg";
+import crew from "@public/assets/crew/background-crew-desktop.jpg";
+import destination from "@public/assets/destination/background-destination-desktop.jpg";
+import technology from "@public/assets/technology/background-technology-desktop.jpg";
 
-import homeTablet from "@/assets/home/background-home-tablet.jpg";
-import crewTablet from "@/assets/crew/background-crew-tablet.jpg";
-import destinationTablet from "@/assets/destination/background-destination-tablet.jpg";
-import technologyTablet from "@/assets/technology/background-technology-tablet.jpg";
+import homeTablet from "@public/assets/home/background-home-tablet.jpg";
+import crewTablet from "@public/assets/crew/background-crew-tablet.jpg";
+import destinationTablet from "@public/assets/destination/background-destination-tablet.jpg";
+import technologyTablet from "@public/assets/technology/background-technology-tablet.jpg";
 
-import homeMobile from "@/assets/home/background-home-mobile.jpg";
-import crewMobile from "@/assets/crew/background-crew-mobile.jpg";
-import destinationMobile from "@/assets/destination/background-destination-mobile.jpg";
-import technologyMobile from "@/assets/technology/background-technology-mobile.jpg";
+import homeMobile from "@public/assets/home/background-home-mobile.jpg";
+import crewMobile from "@public/assets/crew/background-crew-mobile.jpg";
+import destinationMobile from "@public/assets/destination/background-destination-mobile.jpg";
+import technologyMobile from "@public/assets/technology/background-technology-mobile.jpg";
 
 interface Images {
   [key: string]: {
@@ -89,7 +89,7 @@ export default function BackgroundImage() {
       <Image
         src={screenSize}
         key={pathname}
-        priority={true}
+        priority
         objectFit="cover"
         alt="Background"
         fill

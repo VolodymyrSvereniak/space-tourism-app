@@ -1,5 +1,7 @@
-import styles from "./Destination.module.scss";
+import { redirect } from "next/navigation";
 
 export default function Destination() {
-  return <section>Destiny</section>;
+  redirect("/destination/moon");
+
+  return null;
 }
