@@ -10,6 +10,7 @@
 
 html,
 body {
+  height: 100%;
   overflow: hidden;
 }
 
@@ -52,4 +53,27 @@ body {
 
 .hover-explore-button:hover::after {
   transform: scale(1);
+}
+
+@layer utilities {
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 2fr;
+    grid-template-areas:
+      "title title"
+      "planet article";
+  }
+
+  .grid-title {
+    grid-area: title;
+  }
+
+  .grid-planet {
+    grid-area: planet;
+  }
+
+  .grid-article {
+    grid-area: article;
+  }
 }

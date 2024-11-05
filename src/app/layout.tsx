@@ -36,10 +36,10 @@ export default function RootLayout({
       lang="en"
       className={`${barlowCondensed.variable} ${barlow.variable} ${bellefair.variable}`}
     >
-      <body>
+      <body className="h-screen">
         <BackgroundImage />
         <Header />
-        <main className="w-screen h-screen">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );

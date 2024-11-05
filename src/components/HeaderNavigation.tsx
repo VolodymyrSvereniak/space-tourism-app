@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { currentDestination } from "@/utils/setBorderNavigation";
+import { currentDestination } from "@/utils/setPlanetsBorder";
 
 export default function HeadNavigation() {
   const pathname = usePathname();
