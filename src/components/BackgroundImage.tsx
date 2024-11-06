@@ -75,7 +75,7 @@ export default function BackgroundImage() {
   return (
     <>
       <Image
-        className="-z-50 animate-fade"
+        className="-z-50"
         src={screenSize}
         key={pathname}
         loading="eager"

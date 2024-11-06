@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { SpaceJourneyData } from "../../../interfaces/interfaces";
+import { SpaceJourneyData } from "@/interfaces/interfaces";
 import Destination from "@/data/destination.json";
 import Crew from "@/data/crew.json";
 import Technology from "@/data/technology.json";
@@ -20,9 +20,7 @@ export async function GET(
     params: { SpaceEntities: SpaceJourneyKey };
   }
 ) {
-  return await new Promise((resolve) =>
-    setTimeout(() => {
-      resolve(NextResponse.json(data[SpaceEntities]));
-    }, 500)
+  return await new Promise<NextResponse>((resolve) =>
+    resolve(NextResponse.json(data[SpaceEntities]))
   );
 }

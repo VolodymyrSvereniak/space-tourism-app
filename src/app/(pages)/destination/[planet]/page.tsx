@@ -40,7 +40,7 @@ export default async function Destination({
           <p className="w-[445px] h-fit font-barlow leading-[180%] text-home-desc">
             {getPlanet.description}
           </p>
-          <hr className="border-[1px] border-gray-700 my-5" />
+          <hr className="w-[450px] border-[1px] border-gray-700 my-5" />
           <div className="flex">
             <div className="w-[210px]">
               <h4 className="text-home-desc tracking-[2px] font-barlowCondensed text-sm h-10">

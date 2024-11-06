@@ -22,7 +22,7 @@ export default function PlanetLinks({ planetData }: PlanetLinksProps) {
       {planetData.destination.map((d) => (
         <li className="w-[53px] h-[19px]" key={d.name}>
           <Link
-            className={`text-lg pb-2 tracking-[2px] ${
+            className={`text-lg pb-2 tracking-[2px] uppercase ${
               setBorder(d.name) ||
               "hover:border-b-4 hover:border-white/50 transition-all"
             }`}

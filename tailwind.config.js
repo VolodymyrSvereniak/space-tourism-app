@@ -28,25 +28,24 @@ module.exports = {
       borderWidth: {
         large: "88px",
       },
-      keyframes: {
-        fade: {
-          "0%": {
-            opacity: "0.9",
-          },
-          "100%": {
-            opacity: "1",
-          },
-        },
-        animate: {
-          "0%": {
-            transform: "translateY(0)",
-          },
-          "100%": {
-            transform: "translateY(100%)",
-          },
-        },
-      },
-
+      // keyframes: {
+      //   fade: {
+      //     "0%": {
+      //       opacity: "0.9",
+      //     },
+      //     "100%": {
+      //       opacity: "1",
+      //     },
+      //   },
+      //   animate: {
+      //     "0%": {
+      //       transform: "translateY(0)",
+      //     },
+      //     "100%": {
+      //       transform: "translateY(100%)",
+      //     },
+      //   },
+      // },
       animation: {
         fade: "fade 0.1s ease-in-out",
       },
