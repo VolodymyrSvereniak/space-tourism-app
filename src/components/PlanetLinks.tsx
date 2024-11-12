@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { SpaceJourneyEntities } from "@/interfaces/interfaces";
+import { SpaceJourneyEntities } from "@/types/interfaces";
 
 interface PlanetLinksProps {
   planetData: SpaceJourneyEntities;
@@ -20,7 +20,7 @@ export default function PlanetLinks({ planetData }: PlanetLinksProps) {
   return (
     <ul className="flex gap-8 font-barlowCondensed ">
       {planetData.destination.map((d) => (
-        <li className="w-[53px] h-[19px]" key={d.name}>
+        <li className=" pb-2 justify-center" key={d.name}>
           <Link
             className={`text-lg pb-2 tracking-[2px] uppercase ${
               setBorder(d.name) ||

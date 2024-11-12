@@ -75,12 +75,11 @@ export default function BackgroundImage() {
   return (
     <>
       <Image
-        className="-z-50"
+        className="-z-50 object-cover"
         src={screenSize}
         key={pathname}
         loading="eager"
         priority
-        objectFit="cover"
         alt="Background"
         fill
         quality={100}

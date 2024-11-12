@@ -23,6 +23,16 @@ export interface Crew {
   }>;
 }
 
+export interface CrewMember {
+  name: string;
+  images: {
+    png: string;
+    webp: string;
+  };
+  role: string;
+  bio: string;
+}
+
 export interface Technology {
   technology: Array<{
     name: string;

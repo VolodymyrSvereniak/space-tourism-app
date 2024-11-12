@@ -7,9 +7,9 @@ export default async function Destination({
 }: {
   params: { planet: string };
 }) {
-  const planetData = await getData("destinationKey");
+  const planetsData = await getData("destinationKey");
 
-  const getPlanet = planetData.destination.find(
+  const getPlanet = planetsData.destination.find(
     (d) => d.name.toLowerCase() === planet
   );
 
@@ -33,7 +33,7 @@ export default async function Destination({
           />
         </div>
         <article className="grid-article">
-          <PlanetLinks planetData={planetData} />
+          <PlanetLinks planetData={planetsData} />
           <h1 className="text-white py-10 uppercase text-8xl leading-[110px] font-bellefair">
             {getPlanet.name}
           </h1>

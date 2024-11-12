@@ -1,4 +1,4 @@
-import { SpaceJourneyEntities } from "@/interfaces/interfaces";
+import { SpaceJourneyEntities } from "@/types/interfaces";
 
 export default async function getData(
   entity: string
