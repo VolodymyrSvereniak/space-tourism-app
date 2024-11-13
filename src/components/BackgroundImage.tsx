@@ -3,7 +3,7 @@
 import Image, { StaticImageData } from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { currentDestination } from "@/utils/setPlanetsBorder";
+import { getPath } from "@/utils/setHeaderUnderline";
 
 import blur from "@public/assets/blur.png";
 
@@ -19,24 +19,29 @@ export default function BackgroundImage() {
   const [screenSize, setScreenSize] = useState<StaticImageData | string>(blur);
 
   const pathname = usePathname();
-  const destination = currentDestination(pathname);
+
+  const currentPath = getPath(pathname);
 
   useEffect(() => {
+    const setImage = (path: string) => {
+      return pathname.includes(path) && currentPath;
+    };
+
     const backgroundImages: Images = {
       "/": {
         desktop: "/assets/home/background-home-desktop.jpg",
         tablet: "/assets/home/background-home-tablet.jpg",
         mobile: "/assets/home/background-home-mobile.jpg",
       },
-      "/crew": {
-        desktop: "/assets/crew/background-crew-desktop.jpg",
-        tablet: "/assets/crew/background-crew-tablet.jpg",
-        mobile: "/assets/crew/background-crew-mobile.jpg",
-      },
-      [`${destination}`]: {
+      [`${setImage("destination")}`]: {
         desktop: "/assets/destination/background-destination-desktop.jpg",
         tablet: "/assets/destination/background-destination-tablet.jpg",
         mobile: "/assets/destination/background-destination-mobile.jpg",
+      },
+      [`${setImage("crew")}`]: {
+        desktop: "/assets/crew/background-crew-desktop.jpg",
+        tablet: "/assets/crew/background-crew-tablet.jpg",
+        mobile: "/assets/crew/background-crew-mobile.jpg",
       },
       "/technology": {
         desktop: "/assets/technology/background-technology-desktop.jpg",
@@ -70,7 +75,7 @@ export default function BackgroundImage() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [setScreenSize, pathname, destination]);
+  }, [setScreenSize, pathname, currentPath]);
 
   return (
     <>

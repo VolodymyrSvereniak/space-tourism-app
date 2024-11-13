@@ -23,7 +23,7 @@ export default async function Destination({
         <h3 className="grid-title ml-16 py-5 font-barlowCondensed  text-3xl">
           <b className="mr-6">01</b>PICK YOUR DESTINATION
         </h3>
-        <div className="grid-planet content-center place-items-center">
+        <div className="grid-image content-center place-items-center">
           <Image
             src={getPlanet.images.png}
             alt={getPlanet.name}

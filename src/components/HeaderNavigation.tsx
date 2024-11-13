@@ -2,11 +2,16 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { currentDestination } from "@/utils/setPlanetsBorder";
+import { getPath } from "@/utils/setHeaderUnderline";
 
 export default function HeadNavigation() {
   const pathname = usePathname();
-  const destinationPath = currentDestination(pathname);
+
+  const currentPath = getPath(pathname);
+
+  const setBorder = (path: string) => {
+    return pathname.includes(path) && currentPath;
+  };
 
   return (
     <div className="flex gap-12 font-barlowCondensed">
@@ -22,7 +27,7 @@ export default function HeadNavigation() {
       <Link
         rel="preload"
         className={`flex items-center justify-center h-full relative tracking-widest ${
-          pathname === destinationPath ? "border-b-4" : "hover-header-link"
+          setBorder("destination") ? "border-b-4" : "hover-header-link"
         }`}
         href={"/destination"}
       >
@@ -31,7 +36,7 @@ export default function HeadNavigation() {
       <Link
         rel="preload"
         className={`flex items-center justify-center h-full relative tracking-widest ${
-          pathname === "/crew" ? "border-b-4" : "hover-header-link"
+          setBorder("crew") ? "border-b-4" : "hover-header-link"
         }`}
         href={"/crew"}
       >

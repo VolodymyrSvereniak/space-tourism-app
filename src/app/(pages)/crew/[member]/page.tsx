@@ -13,7 +13,7 @@ export default async function Crew({
     (crewMember) => crewMember.role.toLowerCase() === member
   );
 
-  if (!crewData) {
+  if (!crewMember) {
     return <div>Something went wrong</div>;
   }
 
@@ -23,14 +23,14 @@ export default async function Crew({
         <h3 className="grid-title ml-16 py-5 font-barlowCondensed  text-3xl">
           <b className="mr-6">01</b>PICK YOUR DESTINATION
         </h3>
-        <div className="grid-planet content-center place-items-center">
-          {/* <Image
-            src={crewData.crew.}
-            alt={crewData
+        <div className="grid-image content-center place-items-center">
+          <Image
+            src={crewMember.images.webp}
+            alt={crewMember.name}
             width={400}
             height={400}
             priority
-          /> */}
+          />
         </div>
         <article className="grid-article">
           <h2>Commander</h2>
