@@ -11,7 +11,7 @@
 html,
 body {
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .custom-before-line::before {
@@ -56,13 +56,22 @@ body {
 }
 
 @layer utilities {
-  .grid-layout {
+  .grid-destination {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 2fr;
     grid-template-areas:
       "title title"
-      "planet article";
+      "image article";
+  }
+
+  .grid-crew {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 2fr;
+    grid-template-areas:
+      "title title"
+      "article image";
   }
 
   .grid-title {
@@ -70,10 +79,19 @@ body {
   }
 
   .grid-image {
-    grid-area: planet;
+    grid-area: image;
   }
 
   .grid-article {
     grid-area: article;
   }
+}
+
+.crew-member-fade {
+  mask-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }

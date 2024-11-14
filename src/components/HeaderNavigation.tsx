@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { getPath } from "@/utils/setHeaderUnderline";
+import { getPath } from "@/utils/getPath";
 
 export default function HeadNavigation() {
   const pathname = usePathname();

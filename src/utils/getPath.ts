@@ -23,11 +23,11 @@ const pathMatcher = (checkPath: Paths, pathname: string) => {
 };
 
 export const getPath = (pathname: string): string | undefined => {
-  if (pathname.includes("/destination")) {
+  if (pathname.includes("destination")) {
     return pathMatcher(destinationPath, pathname);
   }
 
-  if (pathname.includes("/crew")) {
+  if (pathname.includes("crew")) {
     return pathMatcher(crewPath, pathname);
   }
 };

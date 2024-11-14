@@ -4,11 +4,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SpaceJourneyEntities } from "@/types/interfaces";
 
-interface PlanetLinksProps {
+interface PlanetsPaginationProps {
   planetData: SpaceJourneyEntities;
 }
 
-export default function PlanetLinks({ planetData }: PlanetLinksProps) {
+export default function PlanetsPagination({
+  planetData,
+}: PlanetsPaginationProps) {
   const pathname = usePathname();
 
   const setBorder = (planetName: string): string | undefined => {

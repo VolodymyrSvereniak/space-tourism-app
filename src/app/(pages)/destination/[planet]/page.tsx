@@ -1,6 +1,6 @@
 import getData from "@/lib/getData";
 import Image from "next/image";
-import PlanetLinks from "@/components/PlanetLinks";
+import PlanetsPagination from "@/components/PlanetsPagination";
 
 export default async function Destination({
   params: { planet },
@@ -19,7 +19,7 @@ export default async function Destination({
 
   return (
     <section className="w-full h-[79.5vh]">
-      <div className="grid-layout w-[80%] h-full text-yellow-50 my-0 mx-auto pb-7">
+      <div className="grid-destination w-[80%] h-full text-yellow-50 my-0 mx-auto pb-7">
         <h3 className="grid-title ml-16 py-5 font-barlowCondensed  text-3xl">
           <b className="mr-6">01</b>PICK YOUR DESTINATION
         </h3>
@@ -33,7 +33,7 @@ export default async function Destination({
           />
         </div>
         <article className="grid-article">
-          <PlanetLinks planetData={planetsData} />
+          <PlanetsPagination planetData={planetsData} />
           <h1 className="text-white py-10 uppercase text-8xl leading-[110px] font-bellefair">
             {getPlanet.name}
           </h1>

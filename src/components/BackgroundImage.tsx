@@ -3,7 +3,7 @@
 import Image, { StaticImageData } from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { getPath } from "@/utils/setHeaderUnderline";
+import { getPath } from "@/utils/getPath";
 
 import blur from "@public/assets/blur.png";
 
