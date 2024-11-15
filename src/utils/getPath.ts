@@ -3,7 +3,6 @@ interface Paths {
 }
 
 const destinationPath: Paths = {
-  default: "/destination",
   moon: "/destination/moon",
   mars: "/destination/mars",
   europa: "/destination/europa",
@@ -11,7 +10,6 @@ const destinationPath: Paths = {
 };
 
 const crewPath: Paths = {
-  default: "/crew",
   command: "/crew/commander",
   mission: "/crew/mission-specialist",
   pilot: "/crew/pilot",

@@ -16,7 +16,7 @@ export default function Home() {
         </p>
       </article>
       <Link
-        href={"/destination"}
+        href={"/destination/moon"}
         className="hover-explore-button flex justify-center items-center text-black font-bellefair w-64 h-64 bg-white rounded-full text-3xl"
       >
         EXPLORE

@@ -23,8 +23,8 @@ export default function BackgroundImage() {
   const currentPath = getPath(pathname);
 
   useEffect(() => {
-    const setImage = (path: string) => {
-      return pathname.includes(path) && currentPath;
+    const setImage = (pathKey: string) => {
+      return pathname.includes(pathKey) && currentPath;
     };
 
     const backgroundImages: Images = {

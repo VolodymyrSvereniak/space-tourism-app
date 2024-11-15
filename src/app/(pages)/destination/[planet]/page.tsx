@@ -2,7 +2,7 @@ import getData from "@/lib/getData";
 import Image from "next/image";
 import PlanetsPagination from "@/components/PlanetsPagination";
 
-export default async function Destination({
+export default async function DestinationPlanet({
   params: { planet },
 }: {
   params: { planet: string };

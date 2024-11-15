@@ -2,7 +2,7 @@ import CrewMembersPagination from "@/components/CrewMembersPagination";
 import getData from "@/lib/getData";
 import Image from "next/image";
 
-export default async function Crew({
+export default async function CrewMember({
   params: { member },
 }: {
   params: { member: string };

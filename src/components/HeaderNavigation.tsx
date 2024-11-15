@@ -29,7 +29,7 @@ export default function HeadNavigation() {
         className={`flex items-center justify-center h-full relative tracking-widest ${
           setBorder("destination") ? "border-b-4" : "hover-header-link"
         }`}
-        href={"/destination"}
+        href={"/destination/moon"}
       >
         <span className="mr-3 font-bold">01</span> DESTINATION
       </Link>
@@ -38,7 +38,7 @@ export default function HeadNavigation() {
         className={`flex items-center justify-center h-full relative tracking-widest ${
           setBorder("crew") ? "border-b-4" : "hover-header-link"
         }`}
-        href={"/crew"}
+        href={"/crew/commander"}
       >
         <span className="mr-3 font-bold">02</span> CREW
       </Link>
