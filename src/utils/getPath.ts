@@ -16,6 +16,12 @@ const crewPath: Paths = {
   engineer: "/crew/flight-engineer",
 };
 
+const technologyPath: Paths = {
+  launch: "/technology/launch-vehicle",
+  spaceport: "/technology/spaceport",
+  capsule: "/technology/space-capsule",
+};
+
 const pathMatcher = (checkPath: Paths, pathname: string) => {
   return Object.values(checkPath).find((path) => path === pathname);
 };
@@ -27,5 +33,9 @@ export const getPath = (pathname: string): string | undefined => {
 
   if (pathname.includes("crew")) {
     return pathMatcher(crewPath, pathname);
+  }
+
+  if (pathname.includes("technology")) {
+    return pathMatcher(technologyPath, pathname);
   }
 };

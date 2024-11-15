@@ -44,6 +44,15 @@ export interface Technology {
   }>;
 }
 
+export interface CurrentTechnology {
+  name: string;
+  images: {
+    portrait: string;
+    landscape: string;
+  };
+  description: string;
+}
+
 export interface SpaceJourneyData {
   destinationKey: Destination;
   crewKey: Crew;

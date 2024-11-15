@@ -19,7 +19,7 @@ export default async function DestinationPlanet({
 
   return (
     <section className="w-full h-[79.5vh]">
-      <div className="grid-destination w-[80%] h-full text-yellow-50 my-0 mx-auto pb-7">
+      <div className="grid-img-leftSide w-[80%] h-full text-yellow-50 my-0 mx-auto pb-7">
         <h3 className="grid-title py-5 font-barlowCondensed  text-3xl">
           <b className="mr-6">01</b>PICK YOUR DESTINATION
         </h3>

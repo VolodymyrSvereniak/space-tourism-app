@@ -45,9 +45,9 @@ export default function HeadNavigation() {
       <Link
         rel="preload"
         className={`flex items-center justify-center h-full relative tracking-widest ${
-          pathname === "/technology" ? "border-b-4" : "hover-header-link"
+          setBorder("technology") ? "border-b-4" : "hover-header-link"
         }`}
-        href={"/technology"}
+        href={"/technology/launch-vehicle"}
       >
         <span className="mr-3 font-bold">03</span> TECHNOLOGY
       </Link>

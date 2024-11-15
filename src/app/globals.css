@@ -56,7 +56,7 @@ body {
 }
 
 @layer utilities {
-  .grid-destination {
+  .grid-img-leftSide {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 2fr;
@@ -65,7 +65,7 @@ body {
       "image article";
   }
 
-  .grid-crew {
+  .grid-img-rightSide {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 2fr;
