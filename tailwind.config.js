@@ -25,6 +25,9 @@ module.exports = {
         blured: "rgba(255, 255, 255, 0.05)",
         "home-desc": "rgb(208, 214, 249)",
       },
+      width: {
+        extended: "calc(50% + 50px)",
+      },
       borderWidth: {
         large: "88px",
       },

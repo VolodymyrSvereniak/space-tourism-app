@@ -54,7 +54,7 @@ export default function BackgroundImage() {
       const screenWidth = window.innerWidth;
       let imageKey;
 
-      if (screenWidth < 768) {
+      if (screenWidth < 640) {
         imageKey = "mobile";
       } else if (screenWidth < 1024) {
         imageKey = "tablet";

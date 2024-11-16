@@ -18,7 +18,7 @@ export default function TechnologiesPagination({
 
   return (
     <nav>
-      <ul className="flex flex-col gap-6 items-center justify-center ">
+      <ul className="flex flex-col gap-6 items-center justify-center">
         {technologyData.map((mechanism, index) => (
           <li className="flex w-[80px] h-[80px]" key={mechanism.name}>
             <Link

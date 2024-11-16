@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="flex justify-between items-center p-28">
-      <article className="flex flex-col justify-between items-start h-80 w-540">
+    <section className="flex justify-between items-center p-28 max-lg:flex-col max-lg:gap-32">
+      <article className="flex flex-col justify-between items-start h-80 w-540 max-lg:items-center max-lg:text-center max-lg:justify-center max-lg:gap-3">
         <h3 className="text-home-desc text-3xl font-barlowCondensed">
           SO, YOU WANT TO TRAVEL TO
         </h3>
@@ -17,7 +17,7 @@ export default function Home() {
       </article>
       <Link
         href={"/destination/moon"}
-        className="hover-explore-button flex justify-center items-center text-black font-bellefair w-64 h-64 bg-white rounded-full text-3xl"
+        className="hover-explore-button flex justify-center items-center text-black font-bellefair w-64 h-64 bg-white rounded-full text-3xl max-lg:"
       >
         EXPLORE
       </Link>
