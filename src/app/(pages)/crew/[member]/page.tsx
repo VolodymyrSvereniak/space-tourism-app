@@ -20,7 +20,7 @@ export default async function CrewMember({
   const crewMemberRole = crewMember.role.replace(/-/g, " ");
 
   return (
-    <section className="w-full h-[75.5vh]">
+    <section className="w-full h-[75.5vh] max-md:h-full max-sm:h-full">
       <div className="grid-img-rightSide w-[80%] h-full text-yellow-50 my-0 mx-auto pb-7">
         <h3 className="grid-title py-5 font-barlowCondensed  text-3xl">
           <b className="mr-6 text-gray-500">02</b>MEET YOUR CREW

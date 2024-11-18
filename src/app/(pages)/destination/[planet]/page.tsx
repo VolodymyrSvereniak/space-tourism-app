@@ -20,10 +20,10 @@ export default async function DestinationPlanet({
   return (
     <section className="w-full h-full">
       <div className="grid-img-leftSide w-[80%] h-full text-yellow-50 my-0 mx-auto pb-7 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:pb-16">
-        <h3 className="grid-title py-5 font-barlowCondensed  text-3xl max-lg:self-start">
-          <b className="mr-6">01</b>PICK YOUR DESTINATION
+        <h3 className="grid-title py-5 font-barlowCondensed  text-3xl max-lg:self-start max-sm:text-2xl max-sm:mx-auto">
+          <b className="mr-6 ">01</b>PICK YOUR DESTINATION
         </h3>
-        <div className="grid-image content-center place-items-center">
+        <div className="grid-image content-center place-items-center max-sm:pt-5">
           <Image
             src={getPlanet.images.png}
             alt={getPlanet.name}
@@ -37,11 +37,11 @@ export default async function DestinationPlanet({
           <h1 className="text-white py-10 uppercase text-8xl leading-[110px] font-bellefair">
             {getPlanet.name}
           </h1>
-          <p className="w-[445px] h-fit font-barlow leading-[180%] text-home-desc max-lg:text-center">
+          <p className="w-[445px] h-fit font-barlow leading-[180%] text-home-desc max-lg:text-center max-sm:w-[327px]">
             {getPlanet.description}
           </p>
-          <hr className="w-[450px] border-[1px] border-gray-700 my-5" />
-          <div className="flex max-lg:gap-20">
+          <hr className="w-[450px] border-[1px] border-gray-700 my-5 max-sm:w-[327px]" />
+          <div className="flex max-lg:gap-20 max-sm:flex-col max-sm:gap-5 max-sm:items-center">
             <div className="w-[210px] max-lg:flex max-lg:flex-col max-lg:items-center max-lg:w-fit">
               <h4 className="text-home-desc tracking-[2px] font-barlowCondensed text-sm h-10">
                 AVG. DISTANCE
