@@ -21,7 +21,7 @@ export default function PlanetsPagination({
 
   return (
     <nav>
-      <ul className="flex gap-8 font-barlowCondensed ">
+      <ul className="flex gap-8 font-barlowCondensed max-lg:justify-center">
         {planetData.destination.map((d) => (
           <li className=" pb-2 justify-center" key={d.name}>
             <Link

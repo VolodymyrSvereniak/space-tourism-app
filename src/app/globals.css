@@ -112,9 +112,3 @@ body {
     overflow: auto;
   }
 }
-
-@media (max-width: 640px) {
-  body {
-    overflow: hidden;
-  }
-}

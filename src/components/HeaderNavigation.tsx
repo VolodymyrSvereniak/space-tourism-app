@@ -32,7 +32,7 @@ export default function HeadNavigation() {
         <div className="flex gap-12 font-barlowCondensed max-sm:flex-col max-sm:gap-8 max-sm:pl-10">
           <Link
             rel="preload"
-            className={`flex items-center justify-center h-full relative tracking-widest max-sm:justify-start cursor-default ${
+            className={`flex items-center justify-center h-full relative tracking-widest max-sm:justify-start max-sm:cursor-default ${
               pathname === "/"
                 ? "border-b-4 max-sm:border-r-4 max-sm:border-b-0"
                 : "hover-header-link"
@@ -43,7 +43,7 @@ export default function HeadNavigation() {
           </Link>
           <Link
             rel="preload"
-            className={`flex items-center justify-center h-full relative tracking-widest max-sm:justify-start cursor-default ${
+            className={`flex items-center justify-center h-full relative tracking-widest max-sm:justify-start max-sm:cursor-default ${
               setBorder("destination")
                 ? "border-b-4 max-sm:border-r-4 max-sm:border-b-0"
                 : "hover-header-link"
@@ -54,7 +54,7 @@ export default function HeadNavigation() {
           </Link>
           <Link
             rel="preload"
-            className={`flex items-center justify-center h-full relative tracking-widest max-sm:justify-start cursor-default ${
+            className={`flex items-center justify-center h-full relative tracking-widest max-sm:justify-start max-sm:cursor-default ${
               setBorder("crew")
                 ? "border-b-4 max-sm:border-r-4 max-sm:border-b-0"
                 : "hover-header-link"
@@ -65,7 +65,7 @@ export default function HeadNavigation() {
           </Link>
           <Link
             rel="preload"
-            className={`flex items-center justify-center h-full relative tracking-widest max-sm:justify-start cursor-default ${
+            className={`flex items-center justify-center h-full relative tracking-widest max-sm:justify-start max-sm:cursor-default ${
               setBorder("technology")
                 ? "border-b-4 max-sm:border-r-4 max-sm:border-b-0"
                 : "hover-header-link"
