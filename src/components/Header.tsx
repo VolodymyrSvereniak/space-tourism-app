@@ -14,9 +14,7 @@ export default async function Page() {
           height={48}
         />
       </div>
-      <nav className="flex justify-center gap-2 text-white w-extended h-24 backdrop-blur-md bg-blured custom-before-line max-lg:w-full max-lg:h-full">
-        <HeaderNavigation />
-      </nav>
+      <HeaderNavigation />
     </header>
   );
 }

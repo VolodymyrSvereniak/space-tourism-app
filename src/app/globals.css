@@ -26,18 +26,20 @@ body {
   background: grey;
 }
 
-.hover-header-link::after {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  content: "";
-  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-  transform: scaleX(0);
-  transition: transform 250ms ease-in-out;
-}
+@media (min-width: 640px) {
+  .hover-header-link::after {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    content: "";
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
 
-.hover-header-link:hover::after {
-  transform: scaleX(1);
+  .hover-header-link:hover::after {
+    transform: scaleX(1);
+  }
 }
 
 .hover-explore-button::after {
@@ -108,5 +110,11 @@ body {
 
   body {
     overflow: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    overflow: hidden;
   }
 }
