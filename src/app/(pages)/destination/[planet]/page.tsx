@@ -18,9 +18,9 @@ export default async function DestinationPlanet({
   }
 
   return (
-    <section className="w-full h-full">
-      <div className="grid-img-leftSide w-[80%] h-full text-yellow-50 my-0 mx-auto pb-7 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:pb-16">
-        <h3 className="grid-title py-5 font-barlowCondensed  text-3xl max-lg:self-start max-sm:text-2xl max-sm:mx-auto">
+    <section>
+      <div className="grid-img-leftSide w-[80%] h-[75.5vh] text-yellow-50 my-0 mx-auto max-lg:flex max-lg:flex-col max-lg:items-center max-lg:pb-16 max-lg:w-full max-lg:mx-0 max-lg:h-full">
+        <h3 className="grid-title py-5 font-barlowCondensed text-3xl max-lg:self-start max-sm:text-2xl max-sm:mx-auto">
           <b className="mr-6 ">01</b>PICK YOUR DESTINATION
         </h3>
         <div className="grid-image content-center place-items-center max-sm:pt-5">

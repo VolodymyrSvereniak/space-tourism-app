@@ -18,14 +18,14 @@ export default function CrewMembersPagination({
 
   return (
     <nav>
-      <ul className="flex items-end gap-5">
+      <ul className="flex items-end gap-5 max-lg:py-10">
         {crewData.map((crewMember) => (
           <li className="w-[15px] h-[15px]" key={crewMember.role}>
             <Link
               href={`/crew/${crewMember.role.toLowerCase()}`}
               className={`${
                 setCurrentRole(crewMember.role) || "hover:border-white/50"
-              } block border-8 w-full h-full border-gray-700 rounded-full`}
+              } block border-8 w-full h-full border-gray-700 rounded-full `}
             ></Link>
           </li>
         ))}

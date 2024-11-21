@@ -11,7 +11,7 @@
 html,
 body {
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .custom-before-line::before {
@@ -106,9 +106,5 @@ body {
 
   .hover-explore-button::after {
     padding: 60px;
-  }
-
-  body {
-    overflow: auto;
   }
 }
