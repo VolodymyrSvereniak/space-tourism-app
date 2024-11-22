@@ -20,12 +20,12 @@ export default async function Technology({
   const currentTechnologyName = currentTechnology.name.replace(/-/g, " ");
 
   return (
-    <section className="w-full h-[75.5vh] mt-6">
-      <div className="grid-img-rightSide w-[90%] h-full text-yellow-50 ml-auto pb-7">
+    <section className="w-full h-[75.5vh] mt-6 max-lg:h-full">
+      <div className="grid-img-rightSide w-[90%] h-full text-yellow-50 ml-auto pb-7 max-lg:flex max-lg:flex-col max-lg:ml-0 max-lg:w-screen">
         <h3 className="grid-title py-5 font-barlowCondensed  text-3xl">
           <b className="mr-6 text-gray-500">03</b>SPACE LAUNCH 101
         </h3>
-        <article className="grid-article mt-11 flex gap-10">
+        <article className="grid-article mt-11 flex gap-10 max-lg:order-2">
           <TechnologiesPagination technologyData={technologyData.technology} />
           <div className="flex flex-col">
             <h2 className="font-bellefair uppercase text-4xl opacity-[0.5]">
@@ -39,13 +39,12 @@ export default async function Technology({
             </p>
           </div>
         </article>
-        <div className="grid-image content-center ml-5 place-items-center">
+        <div className="grid-image relative w-full h-5 content-center place-items-center max-lg:w-full">
           <Image
-            className="w-full h-full rounded-s-xl"
+            className="rounded-s-xl object-cover"
             src={currentTechnology.images.portrait}
             alt={currentTechnology.name}
-            width={500}
-            height={500}
+            fill
             priority
           />
         </div>

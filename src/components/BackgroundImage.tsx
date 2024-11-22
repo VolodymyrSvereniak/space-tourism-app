@@ -88,7 +88,6 @@ export default function BackgroundImage() {
         alt="Background"
         fill
         quality={100}
-        sizes="100vw"
       />
     </>
   );

@@ -21,19 +21,19 @@ export default async function CrewMember({
 
   return (
     <section className="w-full h-[75.5vh] max-lg:h-full max-lg:pt-10">
-      <div className="grid-img-rightSide w-[80%] h-full text-yellow-50 my-0 mx-auto pb-7 max-lg:h-full max-lg:flex max-lg:flex-col max-lg:items-center">
-        <h3 className="grid-title py-5 font-barlowCondensed  text-3xl max-lg:text-2xl max-lg:self-start">
+      <div className="grid-img-rightSide w-[80%] h-full text-yellow-50 my-0 mx-auto pb-7 max-lg:h-full max-lg:flex max-lg:flex-col max-lg:items-center  max-sm:w-full max-sm:mx-0">
+        <h3 className="grid-title py-5 font-barlowCondensed  text-3xl max-lg:text-2xl max-lg:self-start max-sm:self-center">
           <b className="mr-6 text-gray-500">02</b>MEET YOUR CREW
         </h3>
         <article className="grid-article mt-11 flex flex-col justify-between max-lg:items-center max-lg:gap-10 max-lg:w-[512px]">
           <div>
-            <h2 className="font-bellefair uppercase text-4xl opacity-[0.5] max-lg:text-center">
+            <h2 className="font-bellefair uppercase text-4xl opacity-[0.5] max-lg:text-center max-sm:text-3xl">
               {crewMemberRole}
             </h2>
-            <h1 className="text-white py-5 uppercase text-6xl leading-[64px] text-wra font-bellefair max-lg:text-center max-lg:whitespace-nowrap">
+            <h1 className="text-white py-5 uppercase text-6xl leading-[64px] text-wra font-bellefair max-lg:text-center max-lg:whitespace-nowrap max-sm:text-3xl">
               {crewMember.name}
             </h1>
-            <p className="w-[445px] h-fit font-barlow leading-[180%] text-home-desc max-lg:text-center max-lg:w-full">
+            <p className="w-[445px] h-fit font-barlow leading-[180%] text-home-desc max-lg:text-center max-lg:w-full max-sm:w-[327px]">
               {crewMember.bio}
             </p>
           </div>
