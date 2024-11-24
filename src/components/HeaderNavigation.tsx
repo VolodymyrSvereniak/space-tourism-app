@@ -29,52 +29,60 @@ export default function HeadNavigation() {
             : "max-sm:hidden"
         } flex justify-center gap-2 text-white w-extended h-24 backdrop-blur-md bg-blured custom-before-line max-lg:w-full max-lg:h-full`}
       >
-        <div className="flex gap-12 font-barlowCondensed max-sm:flex-col max-sm:gap-8 max-sm:pl-10">
-          <Link
-            rel="preload"
-            className={`flex items-center justify-center h-full relative tracking-widest max-sm:justify-start max-sm:cursor-default ${
-              pathname === "/"
-                ? "border-b-4 max-sm:border-r-4 max-sm:border-b-0"
-                : "hover-header-link"
-            }`}
-            href={"/"}
-          >
-            <b className="mr-3 font-bold">00</b> HOME
-          </Link>
-          <Link
-            rel="preload"
-            className={`flex items-center justify-center h-full relative tracking-widest max-sm:justify-start max-sm:cursor-default ${
-              setBorder("destination")
-                ? "border-b-4 max-sm:border-r-4 max-sm:border-b-0"
-                : "hover-header-link"
-            }`}
-            href={"/destination/moon"}
-          >
-            <span className="mr-3 font-bold">01</span> DESTINATION
-          </Link>
-          <Link
-            rel="preload"
-            className={`flex items-center justify-center h-full relative tracking-widest max-sm:justify-start max-sm:cursor-default ${
-              setBorder("crew")
-                ? "border-b-4 max-sm:border-r-4 max-sm:border-b-0"
-                : "hover-header-link"
-            }`}
-            href={"/crew/commander"}
-          >
-            <span className="mr-3 font-bold">02</span> CREW
-          </Link>
-          <Link
-            rel="preload"
-            className={`flex items-center justify-center h-full relative tracking-widest max-sm:justify-start max-sm:cursor-default ${
-              setBorder("technology")
-                ? "border-b-4 max-sm:border-r-4 max-sm:border-b-0"
-                : "hover-header-link"
-            }`}
-            href={"/technology/launch-vehicle"}
-          >
-            <span className="mr-3 font-bold">03</span> TECHNOLOGY
-          </Link>
-        </div>
+        <ul className="flex gap-12 font-barlowCondensed max-sm:flex-col max-sm:gap-8 max-sm:pl-10">
+          <li>
+            <Link
+              rel="preload"
+              className={`flex items-center justify-center h-full relative tracking-widest max-sm:justify-start max-sm:cursor-default ${
+                pathname === "/"
+                  ? "border-b-4 max-sm:border-r-4 max-sm:border-b-0"
+                  : "hover-header-link"
+              }`}
+              href={"/"}
+            >
+              <b className="mr-3 font-bold">00</b> HOME
+            </Link>
+          </li>
+          <li>
+            <Link
+              rel="preload"
+              className={`flex items-center justify-center h-full relative tracking-widest max-sm:justify-start max-sm:cursor-default ${
+                setBorder("destination")
+                  ? "border-b-4 max-sm:border-r-4 max-sm:border-b-0"
+                  : "hover-header-link"
+              }`}
+              href={"/destination/moon"}
+            >
+              <span className="mr-3 font-bold">01</span> DESTINATION
+            </Link>
+          </li>
+          <li>
+            <Link
+              rel="preload"
+              className={`flex items-center justify-center h-full relative tracking-widest max-sm:justify-start max-sm:cursor-default ${
+                setBorder("crew")
+                  ? "border-b-4 max-sm:border-r-4 max-sm:border-b-0"
+                  : "hover-header-link"
+              }`}
+              href={"/crew/commander"}
+            >
+              <span className="mr-3 font-bold">02</span> CREW
+            </Link>
+          </li>
+          <li>
+            <Link
+              rel="preload"
+              className={`flex items-center justify-center h-full relative tracking-widest max-sm:justify-start max-sm:cursor-default ${
+                setBorder("technology")
+                  ? "border-b-4 max-sm:border-r-4 max-sm:border-b-0"
+                  : "hover-header-link"
+              }`}
+              href={"/technology/launch-vehicle"}
+            >
+              <span className="mr-3 font-bold">03</span> TECHNOLOGY
+            </Link>
+          </li>
+        </ul>
       </nav>
       <button
         className={`${
