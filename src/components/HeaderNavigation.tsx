@@ -79,7 +79,7 @@ export default function HeadNavigation() {
       <button
         className={`${
           mobileIsOpen && "text-7xl"
-        } hidden max-sm:inline-block text-5xl mr-10 text-white max-sm:z-10 cursor-default`}
+        } hidden fixed right-0 max-sm:inline-block text-5xl mr-10 text-white max-sm:z-10 cursor-default`}
         onClick={toggleMobileMenu}
       >
         {mobileIsOpen ? "\u00D7" : "\u2630"}

@@ -80,7 +80,7 @@ export default function BackgroundImage() {
   return (
     <>
       <Image
-        className="-z-50 object-cover"
+        className="-z-50 object-cover h-full w-full"
         src={screenSize}
         key={pathname}
         loading="eager"

@@ -18,14 +18,14 @@ export default function TechnologiesPagination({
 
   return (
     <nav>
-      <ul className="flex flex-col gap-6 items-center justify-center">
+      <ul className="flex flex-col gap-6 items-center justify-center max-lg:flex-row">
         {technologyData.map((mechanism, index) => (
-          <li className="flex w-[80px] h-[80px]" key={mechanism.name}>
+          <li className="flex" key={mechanism.name}>
             <Link
               href={`/technology/${mechanism.name.toLowerCase()}`}
               className={`${
                 setCurrentTechnology(mechanism.name) || "hover:border-white"
-              } flex items-center justify-center w-[80px] h-[80px] font-bellefair text-4xl border-2 border-gray-700 rounded-full`}
+              } flex items-center justify-center w-[80px] h-[80px] font-bellefair text-4xl border-2 border-gray-700 rounded-full max-sm:w-16 max-sm:h-16`}
             >
               {index + 1}
             </Link>
