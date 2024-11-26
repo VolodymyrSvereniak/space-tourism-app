@@ -19,11 +19,11 @@ export default async function DestinationPlanet({
 
   return (
     <section>
-      <div className="grid-img-leftSide w-[80%] h-[75.5vh] text-yellow-50 my-0 mx-auto max-lg:flex max-lg:flex-col max-lg:items-center max-lg:pb-16 max-lg:h-full">
+      <div className="grid-img-leftSide w-[80%] h-[75.5vh] lg:overflow-hidden text-yellow-50 my-0 mx-auto max-lg:flex max-lg:flex-col max-lg:items-center max-lg:pb-16 max-lg:h-full">
         <h3 className="grid-title py-5 font-barlowCondensed text-3xl max-lg:self-start max-sm:text-2xl max-sm:mx-auto">
           <b className="mr-6 ">01</b>PICK YOUR DESTINATION
         </h3>
-        <div className="grid-image content-center place-items-center max-sm:pt-5">
+        <div className="grid-image content-center place-items-center max-sm:pt-5 animate-rotate">
           <Image
             src={getPlanet.images.png}
             alt={getPlanet.name}
